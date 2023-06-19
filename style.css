@@ -344,6 +344,11 @@ header {
   transform: translate3d(-150px, -50px, 0);
 }
 
+.container-item-3 {
+  display: none;
+}
+
+
 .spiderman {
   display: block;
   width: 120%;
@@ -351,6 +356,8 @@ header {
 
   object-fit: cover;
 }
+
+
 
 
 
@@ -537,6 +544,7 @@ header {
   }
 
   .container-item-3 {
+    display: block;
     margin-top: 4.375rem;
   }
 
@@ -547,5 +555,11 @@ header {
     transform: translate3d(0, 0, 0);
     margin-top: -6.25rem;
   }
+
+
+  .brand {
+    display: none;
+  }
+
 
 }
