@@ -187,8 +187,9 @@ button {
 
 
 .logo img {
+  height: 100%;
   width: 100%;
-  max-width: 54px;
+  max-width: 45px;
   object-fit: cover;
 }
 
@@ -532,14 +533,19 @@ header {
   }
 
   .container-item-2 {
-    width: 100%;
-    transform: translate3d(0, 0, 0);
+    display: none;
+  }
+
+  .container-item-3 {
+    margin-top: 4.375rem;
   }
 
   .spiderman {
+    height: 100%;
     width: 100%;
+    max-width: 300px;
     transform: translate3d(0, 0, 0);
-    margin-top: -50px;
+    margin-top: -6.25rem;
   }
 
 }
