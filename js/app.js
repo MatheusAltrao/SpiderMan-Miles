@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let tl = new TimelineMax()
 
+  const agent = navigator.userAgent
+  const whiteLogo = document.querySelector('.logo-spiderman')
+  const android = 'Android'
+
+  if (agent.includes(!android)) {
+    console.log('android')
+    whiteLogo.classList.add('iphone')
+  }
+
   tl.fromTo('.bg-loader', 2,
     { width: '100%', },
     { width: '0%', delay: 5, ease: Expo.easeInOut })
@@ -68,3 +77,11 @@ const menu = document.getElementById('menu')
 menu.addEventListener('click', function () {
   menu.classList.toggle('active');
 });
+
+
+
+
+
+
+
+

@@ -491,23 +491,45 @@ header {
 
 .logo-spiderman {
   fill: transparent;
-  animation: logo-spiderman 3.2s ease infinite alternate;
+  animation: logo-spiderman 12s ease infinite alternate;
+  transition: 0.7s ease;
+}
+
+.logo-spiderman.iphone {
+  fill: transparent;
+  animation: logo-spiderman-iphone 3s ease infinite alternate;
   transition: 0.7s ease;
 }
 
 @keyframes logo-spiderman {
   0% {
-
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
     fill: transparent;
-    opacity: 0;
+  }
+
+  25% {
+    stroke-width: 0.3;
+    stroke-dasharray: 100 0;
+    fill: transparent;
   }
 
   60%,
   100% {
+    fill: var(--color-white);
+    stroke-width: 0;
+  }
+}
 
-    fill: #E5E9EF;
+@keyframes logo-spiderman-iphone {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
     opacity: 1;
   }
+
 }
 
 
